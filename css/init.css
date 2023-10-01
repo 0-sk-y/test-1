@@ -111,6 +111,24 @@ video {
   }
 }
 
+@keyframes l-r {
+  0% {
+    transform: translate(-55%, 0);
+  }
+  100% {
+    transform: translate(-15%, 0);
+  }
+}
+
+@keyframes r-l {
+  0% {
+    transform: translate(55%, 0);
+  }
+  100% {
+    transform: translate(15%, 0);
+  }
+}
+
 /* ➞➞➞➞➞ Header ➞➞➞➞➞ */
 
 .header {
@@ -121,24 +139,58 @@ video {
 /* [int] */
 
 .header .int:nth-child(1) {
+  width: 45%;
+  left: 50%;
+  border-radius: 3rem;
+  transform: translate(-50%, 5%);
+  height: 100%;
+  background-image: var(--gd-2);
+  outline: 1px solid var(--c-g-3);
+  outline-offset: 0.5rem;
+}
+
+
+.header .int:nth-child(2) {
+  width: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 100%;
+  border-radius: 3rem;
+  background-image: var(--gd-1-inv);
+  outline: 5px solid var(--c-g-2);
+}
+
+.header .int:nth-child(3) {
+  width: 15%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  height: 180%;
+  border-radius: 50%;
+  background-image: var(--gd-2);
+}
+
+.header .int:nth-child(4) {
   left: 0;
   border-radius: 0 0 3rem 0;
   background-image: var(--gd-1);
 }
 
-.header .int:nth-child(2) {
+.header .int:nth-child(5) {
   right: 0;
+  background-image: var(--gd-1);
   border-radius: 0 0 0 3rem;
 }
 
-.header .int:nth-child(3) {
+.header .int:nth-child(6) {
   border-radius: 3rem 3rem 0 0;
   bottom: 0;
   left: 50%;
+  width: 35%;
   transform: translate(-50%, 40%);
+  background-image: var(--gd-2);
 }
 
-.header .int:nth-child(4) {
+.header .int:nth-child(7) {
   left: 50%;
   transform: translate(-50%, 300%);
   width: 20%;
@@ -150,7 +202,7 @@ video {
   animation: hue 5s linear infinite;
 }
 
-.header .int:nth-child(5) {
+.header .int:nth-child(8) {
   bottom: 0;
   height: 40%;
   width: 25%;
@@ -158,13 +210,181 @@ video {
   background-image: var(--gd-1);
 }
 
-.header .int:nth-child(6) {
+.header .int:nth-child(9) {
   right: 0;
   bottom: 0;
   height: 40%;
   width: 25%;
   border-radius: 2rem 0 0 0;
   background-image: var(--gd-1);
+}
+
+.header .int:nth-child(10) {
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 7%;
+  height: 80%;
+  border-radius: 50%;
+  outline: 1px solid var(--c-g-5);
+  outline-offset: 0.8rem;
+  background-color: aqua;
+  animation: hue 4s linear infinite;
+}
+
+.header .int:nth-child(11) {
+  bottom: 0;
+  height: 100%;
+  background-image: var(--gd-1);
+  width: 10%;
+  border-radius: 0 3rem 3rem 0;
+  outline: 5px solid var(--c-g-3);
+}
+
+.header .int:nth-child(12) {
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background-image: var(--gd-1);
+  width: 10%;
+  border-radius: 3rem 0 0 3rem;
+  outline: 5px solid var(--c-g-3);
+}
+
+.header .int:nth-child(13) {
+  bottom: 0;
+  height: 100%;
+  background-color: #110891;
+  width: 10%;
+  border-radius: 0 3rem 3rem 0;
+  border: 0;
+  animation-name: l-r, hue;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.header .int:nth-child(14) {
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #110891;
+  width: 10%;
+  border-radius: 3rem 0 0 3rem;
+  border: 0;
+  animation-name: r-l, hue;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.header .int:nth-child(15) {
+  bottom: 0;
+  height: 100%;
+  background-color: #2f3e4f;
+  width: 8%;
+  border-radius: 0 3rem 3rem 0;
+  border: 0;
+  animation-name: l-r;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.header .int:nth-child(16) {
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #2f3e4f;
+  width: 8%;
+  border-radius: 3rem 0 0 3rem;
+  border: 0;
+  animation-name: r-l, hue;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.header .int:nth-child(17) {
+  bottom: 0;
+  height: 100%;
+  background-color: #77e57c;
+  width: 5%;
+  border-radius: 0 3rem 3rem 0;
+  border: 0;
+  animation-name: l-r, hue;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.header .int:nth-child(18) {
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #77e57c;
+  width: 5%;
+  border-radius: 3rem 0 0 3rem;
+  border: 0;
+  animation-name: r-l, hue;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.header .int:nth-child(19) {
+  width: 28%;
+  left: 11%;
+  height: 40%;
+  border-radius: 0 0 3rem 3rem;
+  background-color: aquamarine;
+  animation: hue 4s linear infinite;
+}
+
+.header .int:nth-child(20) {
+  width: 28%;
+  right: 11%;
+  height: 40%;
+  border-radius: 0 0 3rem 3rem;
+  background-color: aquamarine;
+  animation: hue 4s linear infinite;
+}
+
+.header .int:nth-child(21) {
+  width: 15%;
+  left: 9%;
+  height: 20%;
+  bottom: -11%;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #55b52f;
+  animation: hue 4s linear infinite;
+}
+
+.header .int:nth-child(22) {
+  width: 15%;
+  right: 9%;
+  height: 20%;
+  bottom: -11%;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #55b52f;
+  animation: hue 4s linear infinite;
 }
 
 /* ➞➞➞➞➞ L ➞➞➞➞➞ */
