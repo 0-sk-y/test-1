@@ -7,6 +7,7 @@
   --left-bg-img: url("../img/brain.jpg");
   --right-bg-img: url("../img/brain.jpg");
     /*   -> C <-   */
+  --c-bg-img: url(../img/bm.jpg);
     /*   -> R <-   */
     /*   -> Footer <-   */
     /* [Gradientes] */
@@ -480,10 +481,109 @@ video {
   outline-offset: 0.5rem;
 }
 
+/* ➞➞➞➞➞ C ➞➞➞➞➞ */
+
+.c-1,
+.c-2,
+.c-3,
+.c-4 {
+  background-position: center center;
+  background-size: cover;
+}
+
+.c-1 .m1:nth-child(1),
+.c-1 .m1:nth-child(2),
+.c-2 .m1:nth-child(1),
+.c-2 .m1:nth-child(2),
+.c-3 .m1:nth-child(1),
+.c-3 .m1:nth-child(2),
+.c-4 .m1:nth-child(1),
+.c-4 .m1:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.c-1 .m1__link:nth-child(5),
+.c-2 .m1__link:nth-child(5),
+.c-3 .m1__link:nth-child(5),
+.c-4 .m1__link:nth-child(5),
+.c-4 .m1__link:nth-child(5) {
+  border-radius: 0 0 1rem 1rem;
+}
+
 /* ➞➞➞➞➞ C-1 ➞➞➞➞➞ */
+
+.c-1 {background-image: var(--c-bg-img);}
+
+.c-1 .m1:nth-child(1) {
+  top: -90%;
+  transition: top 500ms ease-in-out;
+}
+
+.c-1 .m1:nth-child(2) {
+  bottom: -90%;
+  transition: bottom 500ms ease-in-out;
+}
+
+.c-1 .m1:nth-child(1):hover {top: 0;}
+
+.c-1 .m1:nth-child(2):hover {bottom: 0;}
+
 /* ➞➞➞➞➞ C-2 ➞➞➞➞➞ */
+
+.c-2 {background-image: var(--c-bg-img);}
+
+.c-2 .m1:nth-child(1) {
+  top: -90%;
+  transition: top 500ms ease-in-out;
+}
+
+.c-2 .m1:nth-child(2) {
+  bottom: -90%;
+  transition: bottom 500ms ease-in-out;
+}
+
+.c-2 .m1:nth-child(1):hover {top: 0;}
+
+.c-2 .m1:nth-child(2):hover {bottom: 0;}
+
 /* ➞➞➞➞➞ C-3 ➞➞➞➞➞ */
+
+.c-3 {background-image: var(--c-bg-img);}
+
+.c-3 .m1:nth-child(1) {
+  top: -90%;
+  transition: top 500ms ease-in-out;
+}
+
+.c-3 .m1:nth-child(2) {
+  bottom: -90%;
+  transition: bottom 500ms ease-in-out;
+}
+
+.c-3 .m1:nth-child(1):hover {top: 0;}
+
+.c-3 .m1:nth-child(2):hover {bottom: 0;}
+
 /* ➞➞➞➞➞ C-4 ➞➞➞➞➞ */
+
+.c-4 {background-image: var(--c-bg-img);}
+
+.c-4 .m1:nth-child(1) {
+  top: -90%;
+  transition: top 500ms ease-in-out;
+}
+
+.c-4 .m1:nth-child(2) {
+  bottom: -90%;
+  transition: bottom 500ms ease-in-out;
+}
+
+.c-4 .m1:nth-child(1):hover {top: 0;}
+
+.c-4 .m1:nth-child(2):hover {bottom: 0;}
+
 /* ➞➞➞➞➞ R ➞➞➞➞➞ */
 
 .right {
@@ -525,5 +625,3 @@ video {
 
 /* ➞➞➞➞➞ Footer ➞➞➞➞➞ */
 /* ➞➞➞➞➞ Menus ➞➞➞➞➞ */
-
-
