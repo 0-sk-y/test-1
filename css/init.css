@@ -64,6 +64,7 @@ video {
   "left c-1 c-2 right"
   "left c-3 c-4 right"
   "footer footer footer footer";
+  gap: 0.5%;
 }
 
 .header,
@@ -74,7 +75,7 @@ video {
 .c-4,
 .right,
 .footer {
-  border: 1px solid black;
+  border: 1px solid var(--c-g-2);
   position: relative;
   overflow: hidden;
 }
@@ -209,8 +210,8 @@ video {
 
 .header .int:nth-child(8) {
   bottom: 0;
-  height: 40%;
-  width: 25%;
+  height: 30%;
+  width: 20%;
   border-radius:0 2rem 0 0;
   background-image: var(--gd-1);
 }
@@ -218,8 +219,8 @@ video {
 .header .int:nth-child(9) {
   right: 0;
   bottom: 0;
-  height: 40%;
-  width: 25%;
+  height: 30%;
+  width: 20%;
   border-radius: 2rem 0 0 0;
   background-image: var(--gd-1);
 }
@@ -373,7 +374,7 @@ video {
 }
 
 .header .int:nth-child(21) {
-  width: 15%;
+  width: 10%;
   left: 9%;
   height: 20%;
   bottom: -11%;
@@ -383,7 +384,7 @@ video {
 }
 
 .header .int:nth-child(22) {
-  width: 15%;
+  width: 10%;
   right: 9%;
   height: 20%;
   bottom: -11%;
@@ -624,4 +625,153 @@ video {
 }
 
 /* ➞➞➞➞➞ Footer ➞➞➞➞➞ */
+
+.footer {background-image: var(--gd-2);}
+
+/* [int] */
+
+.footer .int:nth-child(1) {
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 40%;
+  height: 100%;
+  border-radius: 3rem;
+  background-image: var(--gd-1-inv);
+  outline: 1px solid var(--c-g-3);
+  outline-offset: 0.5rem;
+}
+
+.footer .int:nth-child(2) {
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 40%;
+  height: 100%;
+  border-radius: 3rem;
+  background-image: var(--gd-1-inv);
+  outline: 1px solid var(--c-g-3);
+  outline-offset: 0.5rem;
+}
+
+.footer .int:nth-child(3) {
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 35%;
+  height: 100%;
+  border-radius: 3rem;
+  background-image: var(--gd-1);
+}
+
+.footer .int:nth-child(4) {
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 30%;
+  height: 100%;
+  border-radius: 3rem;
+  background-image: var(--gd-1-inv);
+}
+
+.footer .int:nth-child(5) {
+  width: 40%;
+  background-image: var(--gd-1);
+  bottom: 0;
+  left: 0;
+  border-radius: 0 3rem 0 0;
+}
+
+.footer .int:nth-child(6) {
+  width: 40%;
+  background-image: var(--gd-1);
+  bottom: 0;
+  right: 0;
+  border-radius: 3rem 0 0 0;
+}
+
+.footer .int:nth-child(7) {
+  top: 0;
+  height: 30%;
+  width: 20%;
+  border-radius: 0 0 2rem 0;
+  background-image: var(--gd-1-inv);
+  outline: 1px solid var(--c-g-2);
+  outline-offset: 0.5rem;
+}
+
+.footer .int:nth-child(8) {
+  top: 0;
+  right: 0;
+  height: 30%;
+  width: 20%;
+  border-radius: 0 0 0 2rem;
+  background-image: var(--gd-1-inv);
+  outline: 1px solid var(--c-g-2);
+  outline-offset: 0.5rem;
+}
+
+.footer .int:nth-child(9) {
+  bottom: 0;
+  width: 28%;
+  left: 11%;
+  height: 40%;
+  border-radius: 3rem 3rem 0 0;
+  background-color: aquamarine;
+  animation: hue 4s linear infinite;
+}
+
+.footer .int:nth-child(10) {
+  bottom: 0;
+  width: 28%;
+  right: 11%;
+  height: 40%;
+  border-radius: 3rem 3rem 0 0;
+  background-color: aquamarine;
+  animation: hue 4s linear infinite;
+}
+
+/* ➞➞➞➞➞ INT ➞➞➞➞➞ */
+
+._int-1 {
+  left: 2%;
+  bottom: 13%;
+  position: absolute;
+  width: 16%;
+  height: 4%;
+  border: 1px solid var(--c-g-5);
+  z-index: 6;
+  background-image: var(--gd-1);
+  border-radius: 2rem;
+  outline: 5px solid var(--c-g-2);
+  padding: 0.5rem;
+}
+
+._int-2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: #e23124;
+  animation: hue 4s linear infinite;
+}
+
+._int-3 {
+  right: 2%;
+  bottom: 13%;
+  position: absolute;
+  width: 16%;
+  height: 4%;
+  border: 1px solid var(--c-g-5);
+  z-index: 6;
+  background-image: var(--gd-1);
+  border-radius: 2rem;
+  outline: 5px solid var(--c-g-2);
+  padding: 0.5rem;
+}
+
+._int-4 {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: #e23124;
+  animation: hue 4s linear infinite;
+}
+
+
 /* ➞➞➞➞➞ Menus ➞➞➞➞➞ */
