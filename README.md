@@ -1,13 +1,11 @@
-# test-1
+# o-sk-y
 
-!!Prueba de primer repositorio.
+* test-1
+* Prueba de creacion de Repositorio
+* 1366x768
 
----
+![img1](./img/osky-1.png)
 
-## Cambios al archivo markdown
+![img2](./img/osky-2.png)
 
---
-
-## Cambios en la nube
-
-## probando git fetch
+_**Practica de html y css 🚧**_
