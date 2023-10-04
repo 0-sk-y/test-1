@@ -374,8 +374,9 @@ video {
 }
 
 .header .int:nth-child(21) {
+  top: -10%;
   width: 28%;
-  left: 11%;
+  left: 10%;
   height: 40%;
   border-radius: 0 0 3rem 3rem;
   background-color: aquamarine;
@@ -383,8 +384,9 @@ video {
 }
 
 .header .int:nth-child(22) {
+  top: -10%;
   width: 28%;
-  right: 11%;
+  right: 10%;
   height: 40%;
   border-radius: 0 0 3rem 3rem;
   background-color: aquamarine;
@@ -471,7 +473,7 @@ video {
 }
 
 .left .menu1 {
-  left: -95%;
+  left: -92%;
   transition: left 600ms ease-in-out;
 }
 
@@ -613,7 +615,7 @@ video {
 }
 
 .right .menu1 {
-  right: -95%;
+  right: -92%;
   transition: right 600ms ease-in-out;
 }
 
@@ -746,9 +748,9 @@ video {
 }
 
 .footer .int:nth-child(11) {
-  bottom: 0;
+  bottom: -10%;
   width: 28%;
-  left: 11%;
+  left: 10%;
   height: 40%;
   border-radius: 3rem 3rem 0 0;
   background-color: aquamarine;
@@ -756,9 +758,9 @@ video {
 }
 
 .footer .int:nth-child(12) {
-  bottom: 0;
+  bottom: -10%;
   width: 28%;
-  right: 11%;
+  right: 10%;
   height: 40%;
   border-radius: 3rem 3rem 0 0;
   background-color: aquamarine;
@@ -833,6 +835,56 @@ video {
   text-align: center;
   padding: 0.2rem 0;
   outline: 5px solid var(--c-g-2);
+}
+
+.footer .int:nth-child(20) {
+  top: -10%;
+  width: 8%;
+  height: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3rem;
+  color: var(--c-g-4);
+  text-align: center;
+  padding: 0.2rem 0;
+  background-color: orangered;
+}
+
+.footer .int:nth-child(21) {
+  bottom: -38%;
+  width: 8%;
+  height: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3rem;
+  color: var(--c-g-4);
+  text-align: center;
+  padding: 0.2rem 0;
+  background-color: orangered;
+}
+
+.footer .int:nth-child(22) {
+  z-index: 7;
+  left: -2%;
+  bottom: 18%;
+  width: 7%;
+  height: 15%;
+  border-radius: 1rem;
+  background-color: red;
+  animation: l-r 5s ease-in-out infinite alternate,
+  hue 5s linear infinite;
+}
+
+.footer .int:nth-child(23) {
+  z-index: 7;
+  right: -2%;
+  bottom: 18%;
+  width: 7%;
+  height: 15%;
+  border-radius: 1rem;
+  background-color: red;
+  animation: r-l 5s ease-in-out infinite alternate,
+  hue 5s linear infinite;
 }
 
 /* <=<=<=<=<=<=<=[ int ]=>=>=>=>=>=>=>=> */
